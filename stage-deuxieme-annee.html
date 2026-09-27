@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,44 +9,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header navbar navbar-expand-lg">
+    <header class="navbar navbar-expand-xl bg-body-tertiary border-bottom py-2">
         <div class="container">
-            <a class="logo navbar-brand" href="index.html">BD<span>.</span></a>
+            <a class="navbar-brand fw-semibold text-primary" href="index.html">BD.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Afficher la navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="collapse navbar-collapse" id="main-navigation" aria-label="Navigation principale">
-                <div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                <div class="navbar-nav ms-auto align-items-xl-center gap-1">
                     <a class="nav-link" href="index.html">Accueil</a>
-                    <a class="nav-link" href="presentation.html">Présentation</a>
                     <a class="nav-link" href="stage-premiere-annee.html">Stage 1re année</a>
-                    <a class="nav-link active" href="stage-deuxieme-annee.html" aria-current="page">Stage 2e année</a>
+                    <a class="nav-link active text-primary" href="stage-deuxieme-annee.html" aria-current="page">Stage 2e année</a>
+                    <a class="nav-link" href="competences.html">Compétences</a>
                     <a class="nav-link" href="cours.html">Cours</a>
-                    <a class="nav-link" href="tableau-competences.html">B1-B3</a>
                     <a class="nav-link" href="tableau-synthese.html">Synthèse</a>
-                    <a class="nav-cv nav-link" href="documents/CV_BrewennDasse.pdf" download>Mon CV</a>
+                    <a class="nav-link" href="documents/CV_BrewennDasse.pdf" download>Mon CV</a>
                 </div>
             </nav>
         </div>
     </header>
-    <main class="page-main">
-        <section class="page-heading">
-            <p class="eyebrow">Expérience professionnelle</p>
-            <h1>Stage de <span>deuxième année</span></h1>
-            <p class="section-intro">.</p>
-        </section>
-        <section class="content-grid">
-            <article class="card"><div class="card-icon">01</div><h2>L'entreprise</h2><p class="content-placeholder">?</p></article>
-            <article class="card"><div class="card-icon">02</div><h2>Le projet</h2><p class="content-placeholder">?</p></article>
-            <article class="card"><div class="card-icon">03</div><h2>Les compétences</h2><p class="content-placeholder">?</p></article>
-        </section>
-        <section class="section section-small">
-            <p class="eyebrow">Documents</p>
-            <h2>Pièces à ajouter</h2>
-            <p class="section-intro content-placeholder">...</p>
+    <main class="container py-4 py-lg-5">
+        <section class="py-4">
+            <h1>Stage de <span class="text-primary">deuxième année</span></h1>
         </section>
     </main>
-    <footer class="site-footer"><p>Bréwenn Dassé - PCP</p></footer>
+    <footer class="container border-top mt-4 py-3 text-center text-secondary small"><p class="mb-0">Bréwenn Dassé - PCP</p></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

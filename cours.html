@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,47 +9,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header navbar navbar-expand-lg">
-    <div class="container">
-        <a class="logo navbar-brand" href="index.html">BD<span>.</span></a>
+    <header class="navbar navbar-expand-xl bg-body-tertiary border-bottom py-2"><div class="container">
+        <a class="navbar-brand fw-semibold text-primary" href="index.html">BD.</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-label="Afficher la navigation"><span class="navbar-toggler-icon"></span></button>
-        <nav class="collapse navbar-collapse" id="main-navigation" aria-label="Navigation principale">
-        <div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-            <a class="nav-link" href="index.html">Accueil</a>
-            <a class="nav-link" href="presentation.html">Présentation</a>
-            <a class="nav-link" href="stage-premiere-annee.html">Stage 1re année</a>
-            <a class="nav-link" href="stage-deuxieme-annee.html">Stage 2e année</a>
-            <a class="nav-link active" href="cours.html" aria-current="page">Cours</a>
-            <a class="nav-link" href="tableau-competences.html">B1-B3</a>
-            <a class="nav-link" href="tableau-synthese.html">Synthèse</a>
-            <a class="nav-cv nav-link" href="documents/CV_BrewennDasse.pdf" download>Mon CV</a>
-        </div>
-        </nav>
-    </div>
-    </header>
-    <main class="page-main">
-        <section class="page-heading">
-            <p class="eyebrow">Mon parcours scolaire</p>
-            <h1>Vu <span>en cours</span></h1>
+        <nav class="collapse navbar-collapse" id="main-navigation" aria-label="Navigation principale"><div class="navbar-nav ms-auto align-items-xl-center gap-1">
+            <a class="nav-link" href="index.html">Accueil</a><a class="nav-link" href="stage-premiere-annee.html">Stage 1re année</a><a class="nav-link" href="stage-deuxieme-annee.html">Stage 2e année</a><a class="nav-link" href="competences.html">Compétences</a><a class="nav-link active text-primary" href="cours.html" aria-current="page">Cours</a><a class="nav-link" href="tableau-synthese.html">Synthèse</a><a class="nav-link" href="documents/CV_BrewennDasse.pdf" download>Mon CV</a>
+        </div></nav>
+    </div></header>
+    <main class="container py-4 py-lg-5">
+        <section class="py-4">
+            <h1>Ce que j'ai vu <span class="text-primary">en cours</span></h1>
         </section>
-
-        <section class="content-grid">
-            <article class="card"><div class="card-icon">PHP</div><h2>Développement</h2><p class="content-placeholder"></p></article>
-            <article class="card"><div class="card-icon">SQL</div><h2>Bases de données</h2><p class="content-placeholder"></p></article>
-            <article class="card"><div class="card-icon">API</div><h2>Applications</h2><p class="content-placeholder"></p></article>
-            <article class="card"><div class="card-icon">NET</div><h2>Réseaux et systèmes</h2><p class="content-placeholder"></p></article>
-            <article class="card"><div class="card-icon">CYBERSEC</div><h2>Cybersécurité</h2><p class="content-placeholder"></p></article>
-            <article class="card"><div class="card-icon">PRO</div><h2>Environnement professionnel</h2><p class="content-placeholder"></p></article>
+        <section class="row row-cols-1 row-cols-md-2">
+            <article class="col"><h2 class="h5">Développement</h2></article>
+            <article class="col"><h2 class="h5">Bases de données</h2></article>
+            <article class="col"><h2 class="h5">Applications</h2></article>
+            <article class="col"><h2 class="h5">Réseaux et systèmes</h2></article>
+            <article class="col"><h2 class="h5">Cybersécurité</h2></article>
+            <article class="col"><h2 class="h5">Environnement professionnel</h2></article>
         </section>
-
-        <section class="section section-small">
-            <p class="eyebrow">Mes ressources</p>
-            <h2>Documents</h2>
-            <p class="section-intro content-placeholder"></p>
+        <section class="py-4">
+            <h2>Documents et travaux</h2>
         </section>
-
     </main>
-    <footer class="site-footer"><p>Bréwenn Dassé - PCP</p></footer>
+    <footer class="container border-top mt-4 py-3 text-center text-secondary small"><p class="mb-0">Bréwenn Dassé - PCP</p></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
